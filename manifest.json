@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "IMDB Movie Player",
+  "version": "1.0",
+  "description": "Plays any movie on imdb",
+  "icons": {},
+  "permissions": ["tabs"],
+  "web_accessible_resources": ["imdbplayer.js"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.imdb.com/title/*", "https://imdb.com/title/*"],
+      "js": ["imdbplayer.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
