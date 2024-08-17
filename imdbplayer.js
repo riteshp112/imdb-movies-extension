@@ -10,5 +10,5 @@ iframe.allowfullscreen = true;
 
 const wrapper = document.getElementById('ipc-wrap-background-id');
 wrapper.style.display = "none";
-const parentElement = document.getElementsByClassName("NeSef")[0];
-parentElement.insertBefore(iframe, parentElement.childNodes[1]);
+const parentElement = document.getElementsByTagName("body")[0];
+parentElement.append(iframe);
