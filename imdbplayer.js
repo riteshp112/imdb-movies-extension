@@ -8,7 +8,5 @@ iframe.frameborder = "0";
 iframe.scrolling = "no";
 iframe.allowfullscreen = true;
 
-const wrapper = document.getElementById('ipc-wrap-background-id');
-wrapper.style.display = "none";
 const parentElement = document.getElementsByTagName("body")[0];
 parentElement.append(iframe);
